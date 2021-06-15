@@ -1,0 +1,122 @@
+body{
+    background: #37383C;
+}
+
+nav{
+    background: #37383C;
+    border-top: 5px solid black;
+}
+
+nav ul li a,
+.container-home .home-titulo h1,
+.inputV2,
+.trending,
+.gif-grid .image-grid #grid-title,
+.gif-grid .noResults h1,
+.carrousel .titulo-carrousel h1,
+.carrousel .titulo-carrousel p,
+footer,
+.favoritos-header h1,
+.misGifos-header h1,
+#div1 p,
+#div1 h1,
+#contador{
+    color: white;
+}
+
+nav ul li a#circulo,
+#div0{
+    border: 1px solid white;
+}
+
+nav ul li a span,
+nav ul li a span::after,
+nav ul li a#circulo:hover,
+.btn-left span,
+.btn-right span,
+.btn-left span::after,
+.btn-right span::after,
+.btn-left:hover,
+.btn-right:hover{
+    background: white;
+}
+
+nav ul li a#circulo:hover span,
+nav ul li a#circulo:hover span::after{
+    background: black;
+}
+
+.input{
+    border: 1px solid white;
+    background: transparent;
+    color: #9CAFC3;
+}
+
+::placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder{
+    color: #9CAFC3;
+}
+
+.buscadorV2{
+    border: 1px solid white;
+    background: transparent;
+}
+
+
+.gif-grid .image-grid a{
+    border: 1px solid white;
+    color: white;
+}
+
+.gif-grid .image-grid a:hover{
+    background: white;
+    color: black;
+}
+
+.carrousel{
+    background: #222326;
+}
+
+.btn-left,
+.btn-right{
+    border: 1px solid white;
+}
+
+.btn-left:hover span,
+.btn-left:hover span::after,
+.btn-right:hover span,
+.btn-right:hover span::after{
+    background: black;
+}
+
+footer .footer-left i:hover{
+    color: #50E3C2;
+}
+
+footer{
+    border-bottom: 5px solid black;
+}
+
+#div1::before{
+    border:1px solid #37383C;
+}
+
+.container .linea hr{
+    border: 3.3px solid white;
+}
+
+.container .pasos a{
+    border: 1px solid white;
+    color: white;
+}
+
+.container .pasos a:hover{
+    background: white;
+    color: black;
+}
+
+.container .numeros .num{
+    border: 1px solid white;
+    color: white;
+}

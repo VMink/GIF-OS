@@ -1,0 +1,54 @@
+.maxed-gif-container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 9999999999;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.maxed-gif-container .close-btn{
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 19.3%;
+    margin-top: 8.6%;
+    margin-bottom: 100px;
+}
+
+.maxed-gif-container .maxed-gif-image{
+    width: 695px;
+    height: 385px;
+}
+
+.maxed-gif-container .maxed-gif-info-container{
+    width: 695px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.maxed-gif-container .maxed-gif-info-container p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 6px;
+}
+
+.maxed-gif-container .maxed-gif-info-container h1{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.maxed-gif-container .maxed-gif-info-container img{
+    border: 1px solid #CED7E1;
+    border-radius: 6px;
+    border-radius: 6px;
+    margin-left: 21px;
+    cursor: pointer;
+}

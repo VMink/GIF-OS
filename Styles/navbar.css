@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    overflow-x: hidden;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 90px;
+    border-top: 5px solid #572EE5;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    background: White;
+    transition: all 0.5s;
+    z-index: 111111;
+}
+
+nav .logo{
+    padding: 0 0 0 10.8%;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10.8% 0 0;
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2),
+nav ul li:nth-child(3){
+    margin-right: 41.5px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #572EE5;
+    font-size: 13px;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #5ED7C6;
+}
+
+nav ul li a#circulo{
+    display: flex;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid #572EE5;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+nav ul li a#circulo:hover{
+    background: #572EE5;
+}
+
+nav ul li a span{
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: #572EE5;
+    position: relative;
+    transition: all .5s;
+}
+
+nav ul li a#circulo:hover span{
+    background: white;
+}
+
+nav ul li a span::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #572EE5;
+    transform: rotate(90deg);
+    transition: all .5s;
+}
+
+nav ul li a#circulo:hover span::after{
+    background: white;
+}
+
+nav .burger{
+    padding: 0 26px 0 0;
+    display: none;
+    transition: all .5s ease-in;
+}
+
+nav .burger div{
+    width: 15px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 4px;
+    transition: all .5s ease-in;
+}
+
+@media all and (max-width: 768px){
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: calc(100vh - 90px);
+        top: 90px;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        background: #572EE5;
+        padding: 0;
+        width: 100vw;
+        transform: translateX(100%);
+        transition: transform .5s ease-in;
+    }
+
+    nav ul li{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+    }
+
+    nav ul li:nth-child(1){
+        margin-top: 32px;
+    }
+
+    nav ul li:nth-child(1)::after,
+    nav ul li:nth-child(2)::after{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 41px;
+        height: 1px;
+        background: white;
+        opacity: .5;
+        top: 25px;
+    }
+
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3){
+        margin-top: 25px;
+    }
+
+    nav ul li:nth-child(1),
+    nav ul li:nth-child(2),
+    nav ul li:nth-child(3){
+        margin-right: 0;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+
+    nav ul li a#circulo{
+        display: none;
+    }
+
+    nav .logo{
+        padding: 0 0 0 26px;
+    }
+
+    nav .burger{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+    z-index: 1111111;
+    position: fixed;
+}
+
+@keyframes navLinkFades{
+    from{
+        opacity: 0;
+        transform: translateX(50px)
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.toggle .line1{
+    transform: translate(0,6px) rotate(45deg); 
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: translate(0,-6px) rotate(-45deg); 
+}

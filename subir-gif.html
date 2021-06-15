@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Img/Logo-modo-noc.svg" type="image/x-icon">
+
+    <title>Gif OS</title>
+
+    <link rel="stylesheet" href="Styles/navbar.css">
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/subir-gif.css">
+    <link rel="stylesheet" href="Styles/querys.css">
+
+    <script src="https://kit.fontawesome.com/baf8be5cf7.js" crossorigin="anonymous"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+</head>
+<body>
+    
+    <nav>
+        <a href="index.html" class="logo"><img id="logo" src="Img/logo-desktop.svg"></a>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" id="modo-nocturno">MODO NOCTURNO</a></li>
+            <li><a href="favourites.html">FAVORITOS</a></li>
+            <li><a href="mis-gifos.html">MIS GIFOS</a></li>
+            <li id="subir-gif"><a href="subir-gif.html" id="circulo" style="border: 1px solid #37383C"><span></span></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="subir-gif">
+                <div class="camara">
+                    <img id="camara" src="Img/camara.svg">
+                    <img id="luz" src="Img/element-luz-camara.svg">
+                </div>
+                <div class="cuadro">
+                    <div id="div0">
+                        <div id="div1">
+                            <h1>Aquí podrás <br> crear tus propios <span>GIFOS</span></h1>
+                            <p>¡Crea tu GIFO en sólo 3 pasos! <br> (sólo necesitas una cámara para grabar un video)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rollo">
+                    <img id="rollo" src="Img/pelicula.svg">
+                </div>
+            </div>
+            <div class="numeros">
+                <div></div>
+                <div class="container-num" id="container-num">
+                    <div class="num" id="num1">1</div>
+                    <div class="num" id="num2">2</div>
+                    <div class="num" id="num3">3</div>
+                </div>
+                <div id="contador"></div>
+            </div>  
+            <div class="linea">
+                <hr>
+            </div>
+            <div class="pasos" id="pasos">
+                <a onclick="comenzar()">COMENZAR</a>
+            </div>
+        </div>
+    </section>
+
+    <footer> 
+        <div class="footer-left">
+            <p>Compartir en: </p>
+            <div class="footer-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>© GIFOS 2020 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/modo-nocturno.js"></script>
+    <script src="Scripts/subir-gif.js"></script>
+    <script src="Scripts/nav.js"></script>
+
+</body>
+</html>

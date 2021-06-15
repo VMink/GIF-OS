@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+nav ul li a#circulo{
+    background: #9CAFC3;
+    border: 1px solid #9CAFC3;
+}
+
+nav ul li a#circulo:hover{
+    background: #9CAFC3;
+}
+
+nav ul li a span{
+    background: white;
+}
+
+nav ul li a span::after{
+    background: white;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .subir-gif{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .subir-gif .camara{
+    position: relative;
+    margin-right: 100px;
+}
+
+.container .subir-gif .camara #luz{
+    position: absolute;
+    top: 19px;
+    margin-left: 5px;
+}
+
+#div0 {
+    position:relative;
+    width: 688px;
+    height: 390px;
+    border: 1px solid #572EE5;
+}
+
+#div1 {
+    position:relative;
+    width: 648px;
+    height: 350px;
+    background-color:transparent;
+    border:1px solid #50E3C2 ;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#div1:before {
+    content:'';
+    position:absolute;
+    top:-1px; left:-1px;
+    border:1px solid #fff;
+    height:100%;
+    width:100%;
+    border-radius: 8%;
+}
+
+#div1 h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+}
+
+#div1 h1 span{
+    color: #50E3C2;
+}
+
+#div1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
+    line-height: 29px;
+    font-weight: 400;
+}   
+
+#gif-repeat{
+    width: 525px;
+    height: 325px;
+    position: relative;
+}
+
+#div2{
+    width: 525px;
+    height: 325px;
+    position: absolute;
+    background: #572EE5;
+    opacity: 0.6;
+}
+
+#div3{
+    width: 525px;
+    height: 325px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#div3 img{
+    width: 22px;
+    height: 22px;
+}
+
+#div3 p{
+    font-size: 15px;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#div4{
+    width: 525px;
+    height: 325px;
+    position: absolute;
+    display: flex;
+    justify-content: right;
+}
+
+#div4 img{
+    width: 32px;
+    height: 32px;
+    margin: 11px 12px 0 0;
+    cursor: pointer;
+}
+
+.container .subir-gif .rollo{
+    margin-top: 460px;
+    margin-left: 67px;
+}
+
+.container .numeros{
+    width: 688px;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .numeros .num{
+    border: 1px solid #572EE5;
+    width: 32px;
+    font-family: 'Roboto', sans-serif;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #572EE5;
+    text-align: center;
+    font-weight: 500;
+}
+
+.container .numeros .container-num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px;
+}
+
+.container .numeros #num1,
+.container .numeros #num2{
+    margin-right: 26px;
+}
+
+.container .linea hr{
+    width: 796px;
+    border: 3.3px solid #572EE5;
+    background: #572EE5;
+    border-radius: 10px;
+}
+
+.container .pasos a{
+    border: 1px solid #572EE5;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #572EE5;
+    width: 127px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    margin-top: 20px;
+    transition: all .5s ease;
+    cursor: pointer;
+    display: block;
+}
+
+.container .pasos a:hover{
+    color: white;
+    background: #572EE5; 
+}
+
+video{
+    width: 570px;
+    height: 350px;
+}
+
+#contador{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #572EE5;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+    margin-top: -90px;
+    margin-right: -5px;
+}
+
+#contador a:hover{
+    border-bottom: 3px solid #50E3C2;
+    cursor: pointer;
+}
+

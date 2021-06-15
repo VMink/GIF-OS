@@ -1,0 +1,153 @@
+@media all and (max-width: 1200px){
+    .gif-grid .image-grid #grid,
+    .favorite-grid .image-grid #grid,
+    .misGifos-grid .image-grid #grid{
+        width: 838px;
+    }
+    .maxed-gif-container .close-btn{
+        width: 695px;
+        padding: 0;
+    }
+    #btn-left{
+        display: none;
+    }   
+    #btn-right{
+        display: none;
+    }
+    .container-carrousel{
+        margin: 0 20px 0 20px;
+    }
+    #subir-gif{
+        display: none;
+    }
+}
+
+@media all and (max-width: 864px){
+    .gif-grid .image-grid #grid,
+    .favorite-grid .image-grid #grid,
+    .misGifos-grid .image-grid #grid{
+        width: 578px;
+    }
+    .maxed-gif-container .close-btn{
+        width: 318px;
+    }
+    .maxed-gif-container .maxed-gif-image{
+        width: 318px;
+        height: 245px;
+    }
+    .maxed-gif-container .maxed-gif-info-container{
+        width: 318px;
+        justify-content: space-between;
+    }
+    .maxed-gif-container .maxed-gif-info-container .maxed-gif-info{
+        width: 50%;
+    }
+    .maxed-gif-container .maxed-gif-info-container .maxed-gif-btns{
+        width: 50%;
+        display: flex;
+        justify-content: right;
+    }
+    .maxed-gif-container .maxed-gif-info-container img{
+        margin: 0;
+    }
+    .maxed-gif-container .maxed-gif-info-container img:nth-child(2){
+        margin-left: 21px;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-left{
+        flex-direction: column;
+        padding: 47px 0 0 0;
+        font-size: 15px
+    }
+    footer .footer-left p{
+        text-align: center;
+    }
+    footer .footer-left .footer-icons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer .footer-left i{
+        margin: 24px 0 47.8px 0;
+    }
+    footer .footer-right{
+        padding: 0 0 28px 0;
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .container-home .home-titulo{
+        margin-top: 102px;
+        width: 286px;
+    }
+    .container-home .home-titulo h1{
+        font-size: 25px;
+    }
+    .container-home .home-imagen img{
+        width: 273px;
+        height: 130px;
+    }
+    .input{
+        width: 320px;
+        height: 50px;
+    }
+    .buscadorV2{
+        width: 320px;
+    }
+    .inputV2{
+        width: 320px;
+    }
+    .buscadorV2 .lupa{
+        margin: -33px 0 0 280px;
+    }
+    .trending{
+        padding: 0 20% 0 20%;
+    }
+    .trending h1{
+        font-size: 16px;
+    }
+    .trending p{
+        font-size: 14px;
+    }
+    .gif-grid .noResults hr{
+        width: 320px
+    }
+    .gif-grid .noResults h2{
+        font-size: 18px;
+    }
+    .gif-grid .image-grid #grid,
+    .favorite-grid .image-grid #grid,
+    .misGifos-grid .image-grid #grid{
+        width: 333px;
+    }
+    .gif-grid .image-grid #grid img,
+    .favorite-grid .image-grid #grid img,
+    .misGifos-grid .image-grid #grid img{
+        width: 156px;
+        height: 120px;  
+    }
+    .gif-grid .image-grid #grid .gif-container,
+    .favorite-grid .image-grid #grid .gif-container,
+    .misGifos-grid .image-grid #grid .gif-container{
+        cursor: pointer;
+    }
+    .gif-grid .image-grid #grid .gif-container:hover .gifBtns,
+    .favorite-grid .image-grid #grid .gif-container:hover .gifBtns,
+    .misGifos .image-grid #grid .gif-container:hover .gifBtns{
+        display: none;
+    }
+    .gif-grid .image-grid #grid .gif-container:hover .gif-info,
+    .favorite-grid .image-grid #grid .gif-container:hover .gif-info,
+    .misGifos-grid .image-grid #grid .gif-container:hover .gif-info{
+        display: none;
+    }
+    .gif-grid .image-grid #grid .gif-container:hover #hover,
+    .favorite-grid .image-grid #grid .gif-container:hover #hover,
+    .misGifos-grid .image-grid #grid .gif-container:hover #hover{
+        display: none;
+    }
+}

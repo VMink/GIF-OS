@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.misGifos-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carita{
+    margin-bottom: 8px;
+}
+
+.misGifos-header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 30px;
+}
+
+.misGifos-grid .sin-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 98px;
+    margin-bottom: 50px;
+}
+
+.misGifos-grid .sin-contenido h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #50E3C2;
+    text-align: center;
+    font-weight: bold;
+    line-height: 33px;
+    width: 431px;
+    margin-top: 23px;
+}
+
+.misGifos-grid .image-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.misGifos-grid .image-grid #grid{
+    width: 1127px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.misGifos-grid .image-grid #grid img{
+    width: 260px;
+    height: 200px;
+    margin-top: 35px;
+}
+
+.misGifos-grid .image-grid #grid .gif-container{
+    position: relative;
+}
+
+.misGifos-grid .image-grid #grid .gif-container #hover{
+    width: 260px;
+    height: 200px;
+    opacity: 0.6;
+    background: #572EE5;
+    position: absolute;
+    top: 0;
+    margin-top: 36px;
+    display: none;
+}
+
+.misGifos-grid .image-grid #grid .gif-container:hover #hover{
+    display: block;
+}
+
+.misGifos-grid .image-grid #grid .gif-container .gif-info{
+    max-width: 200px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: none;
+}
+
+.misGifos-grid .image-grid #grid .gif-container .gif-info p{
+    font-size: 15px;
+}
+
+.misGifos-grid .image-grid #grid .gif-container .gif-info p::first-letter,
+.misGifos-grid .image-grid #grid .gif-container .gif-info h1::first-letter{
+    text-transform: uppercase;
+}
+
+.misGifos-grid .image-grid #grid .gif-container .gif-info h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.misGifos-grid .image-grid #grid .gif-container:hover .gif-info{
+    display: block;
+}
+
+.misGifos-grid .image-grid #grid .gif-container .gifBtns{
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 100%;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.misGifos-grid .image-grid #grid .gif-container:hover .gifBtns{
+    display: flex;
+}
+
+.misGifos-grid .image-grid #grid .gif-container .gifBtns img{
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+    cursor: pointer;
+}

@@ -1,0 +1,190 @@
+.carrousel{
+    position: relative;
+    width: 100%;
+    height: 640px;
+    background: #F3F5F8;
+    margin-top: 95px;
+}
+
+.carrousel .titulo-carrousel{
+    padding: 67px 0 53px 0;
+    text-align: center;
+}
+
+.carrousel .titulo-carrousel h1{
+    font-size: 25px;
+    color: #572EE5;
+    font-size: 700;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 12px;
+}
+
+.carrousel .titulo-carrousel p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.container-carrousel{
+    position: relative;
+    max-width: 1129px;
+    width: 100%;
+    height: 275px;
+    overflow: hidden;
+}
+
+.align-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-left{
+    position: relative;
+    z-index: 10;
+    margin-right: 25px;
+}
+
+#btn-right{
+    position: relative;
+    z-index: 10;
+    margin-left: 25px;
+}
+
+.container-carrousel .carrousel-slide{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.container-carrousel .carrousel-slide .trendingGif-container .trending-gif img{
+    width: 357px;
+    height: 275px;
+    margin-right: 29px;
+}
+
+.btn-left,
+.btn-right{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #572EE5;
+    background: transparent;
+    transition: all .5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-left span{
+    width: 8px;
+    height: 2px;
+    margin-top: -3px;
+    background: #572EE5;
+    position: relative;
+    transform: rotate(-45deg);
+    transition: all .5s ease-in-out;
+}
+
+.btn-left span::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    margin-top: 3px;
+    margin-left: -3px;
+    background: #572EE5;
+    transform: rotate(90deg);
+    transition: all .5s ease-in-out;
+}
+
+.btn-right span{
+    width: 8px;
+    height: 2px;
+    margin-top: -3px;
+    background: #572EE5;
+    position: relative;
+    transform: rotate(45deg);
+    transition: all .5s ease-in-out;
+}
+
+.btn-right span::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    margin-top: 3px;
+    margin-left: 3px;
+    background: #572EE5;
+    transform: rotate(-90deg);
+    transition: all .5s ease-in-out;
+}
+
+.btn-left:hover,
+.btn-right:hover
+{
+    background: #572EE5;
+} 
+
+.btn-left:hover span,
+.btn-left:hover span::after,
+.btn-right:hover span,
+.btn-right:hover span::after{
+    background: white;
+}
+
+.gif-hover{
+    background: #572EE5;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+}
+
+.gif-buttons{
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.container-carrousel .carrousel-slide .trendingGif-container .gif-buttons img{
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+.trendingGif-container .trendingGif-info{
+    position: absolute;
+    top: 0;
+    margin-top: 180px;
+    display: none;
+    z-index: 22;
+}
+
+.trendingGif-info h1,
+.trendingGif-info p{
+    color: #fff;
+    padding-left: 13px;
+    width: 357px;
+}
+
+.trendingGif-info p{
+    margin-bottom: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.trendingGif-info p::first-letter{
+    text-transform: uppercase;
+}
+
+.trendingGif-info h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}

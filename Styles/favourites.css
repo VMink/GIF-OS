@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.favoritos-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.corazon{
+    margin-bottom: 8px;
+}
+
+.favoritos-header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #572EE5;
+    text-align: center;
+    line-height: 30px;
+}
+
+.favorite-grid .sin-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 98px;
+    margin-bottom: 50px;
+}
+
+.favorite-grid .sin-contenido h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #50E3C2;
+    text-align: center;
+    font-weight: bold;
+    line-height: 33px;
+    width: 431px;
+    margin-top: 23px;
+}
+
+.favorite-grid .image-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.favorite-grid .image-grid #grid{
+    width: 1127px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.favorite-grid .image-grid #grid img{
+    width: 260px;
+    height: 200px;
+    margin-top: 35px;
+}
+
+.favorite-grid .image-grid #grid .gif-container{
+    position: relative;
+}
+
+.favorite-grid .image-grid #grid .gif-container #hover{
+    width: 260px;
+    height: 200px;
+    opacity: 0.6;
+    background: #572EE5;
+    position: absolute;
+    top: 0;
+    margin-top: 35px;
+    display: none;
+}
+
+.favorite-grid .image-grid #grid .gif-container:hover #hover{
+    display: block;
+}
+
+.favorite-grid .image-grid #grid .gif-container .gif-info{
+    max-width: 200px;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: none;
+}
+
+.favorite-grid .image-grid #grid .gif-container .gif-info p{
+    font-size: 15px;
+}
+
+.favorite-grid .image-grid #grid .gif-container .gif-info p::first-letter,
+.favorite-grid .image-grid #grid .gif-container .gif-info h1::first-letter{
+    text-transform: uppercase;
+}
+
+.favorite-grid .image-grid #grid .gif-container .gif-info h1{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.favorite-grid .image-grid #grid .gif-container:hover .gif-info{
+    display: block;
+}
+
+.favorite-grid .image-grid #grid .gif-container .gifBtns{
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 100%;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.favorite-grid .image-grid #grid .gif-container:hover .gifBtns{
+    display: flex;
+}
+
+.favorite-grid .image-grid #grid .gif-container .gifBtns img{
+    width: 32px;
+    height: 32px;
+    margin-right: 11px;
+    cursor: pointer;
+}
+
+#btn-verMas{
+    border: 1px solid #572EE5;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: #572EE5;
+    width: 127px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    margin-top: 78px;
+    transition: all .5s ease;
+    cursor: pointer;
+    display: none;
+}
+
+#btn-verMas:hover{
+    background: #572EE5;
+    color: white;
+}
+
+.fav-button{
+    opacity: 0.7;
+}
+
+.fav-button:hover{
+    opacity: 1;
+}
