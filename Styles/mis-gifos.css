@@ -119,8 +119,7 @@
     position: absolute;
     top: 0;
     display: none;
-    width: 100%;
-    justify-content: right;
+    margin-left: 130px;
     margin-top: 10px;
 }
 
@@ -133,4 +132,20 @@
     height: 32px;
     margin-right: 11px;
     cursor: pointer;
+}
+
+.fav-button{
+    opacity: 0.7;
+}
+
+.fav-button:hover{
+    opacity: 1;
+}
+
+.fav{
+    opacity: 0.7
+}
+
+.fav:hover{
+    opacity: 1
 }

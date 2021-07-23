@@ -153,7 +153,7 @@ nav ul li a span::after{
     height: 325px;
     position: absolute;
     display: flex;
-    justify-content: right;
+    margin-left: 875px;
 }
 
 #div4 img{

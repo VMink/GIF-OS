@@ -142,12 +142,16 @@
     top: 0;
 }
 
-.gif-buttons{
+.trendingGif-container .gif-buttons{
     position: absolute;
     top: 0;
     display: none;
-    justify-content: right;
     margin-top: 10px;
+    margin-left: 230px;
+}
+
+.trendingGif-container:hover .gif-buttons{
+    display: flex;
 }
 
 .container-carrousel .carrousel-slide .trendingGif-container .gif-buttons img{
@@ -187,4 +191,8 @@
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: bold;
+}
+
+.trendingGif-container{ 
+    width: 100%;
 }

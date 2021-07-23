@@ -322,7 +322,7 @@ html,body{
     top: 0;
     display: none;
     width: 100%;
-    justify-content: right;
+    margin-left: 130px;
     margin-top: 10px;
 }
 
