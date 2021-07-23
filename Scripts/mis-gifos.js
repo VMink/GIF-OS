@@ -1,8 +1,8 @@
 //FUNCION PARA VER TUS GIFOS CREADOS
 function misGifos(){
     let misGifosGrid = document.getElementById('misGifos-grid')
-
-    if(localStorage.getItem('myGifs') == null){
+    let misGifosArray = JSON.parse(localStorage.getItem('myGifs'))
+    if(localStorage.getItem('myGifs') == null || misGifosArray.length == 0){
         misGifosGrid.innerHTML = `<div class="sin-contenido">
                                     <div>
                                         <img src="Img/icon-fav-sin-contenido.svg">
@@ -16,8 +16,7 @@ function misGifos(){
                                     <div id="grid">
                                     </div>
                                 </div>`
-        
-        let misGifosArray = JSON.parse(localStorage.getItem('myGifs'))
+
         for(var i = 0; i < misGifosArray.length; i++){
             fetch(`https://api.giphy.com/v1/gifs?ids=${misGifosArray[i]}&api_key=XkzSLgraLP5ThPfuylPMUg7XS0nlTC7f`)
             .then(response => response.json())
